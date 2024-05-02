@@ -1,0 +1,44 @@
+.department-details {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.department-details h2 {
+    text-align: center;
+}
+
+.department-details form {
+    margin-top: 20px;
+}
+
+.department-details label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.department-details input[type="text"],
+.department-details textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.department-details button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.department-details button:hover {
+    background-color: #0056b3;
+}

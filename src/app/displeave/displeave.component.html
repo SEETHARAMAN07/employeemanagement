@@ -1,0 +1,36 @@
+<h1>Registered Employees</h1>
+<div class="d-flex justify-content-center">
+	<div class="spinner-border" role="status">
+		<span class="sr-only" id="loading">
+			Loading...
+		</span>
+	</div>
+</div>
+
+<table class="table table-success table-striped">
+    
+ 
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Department</th>
+            <th scope="col">RollNo</th>
+            <th scope="col">Reason</th>
+            <th scope="col">noofdates</th>
+            <th scope="col">leavefrom</th>
+            <th scope="col">leaveto</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let e of data;">
+			<td>{{ e.name }}</td>
+			<td>{{ e.department }}</td>
+			<td>{{ e.rollno}}</td>
+            <td>{{ e.reason }}</td>
+            <td>{{ e.noofdates }}</td>
+            <td>{{ e.leavefrom }}</td>
+            <td>{{ e.leaveto }}</td>
+		</tr>
+	</tbody>
+</table>

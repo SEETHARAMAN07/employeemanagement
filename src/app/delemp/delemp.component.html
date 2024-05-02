@@ -1,0 +1,13 @@
+<div class="signup-container">
+    <h2>Delte employee</h2>
+    <form 
+    action=""
+    #f="ngForm"
+    novalidate
+    (ngSubmit)="f.form.valid&&onSubmit()"
+    >
+        <input type="text" name="name" [(ngModel)]="formdata.name" #name="ngModel"  placeholder="Name" required>
+        
+        <input type="submit" value="SignUp">
+    </form>
+</div>

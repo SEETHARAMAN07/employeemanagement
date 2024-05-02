@@ -1,0 +1,51 @@
+.head{
+    display: flex;
+    justify-content: center;
+    color: gold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+
+
+.interview{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 50px;
+}
+.inter{
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+
+}
+
+
+span{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    background-color: gold;
+}
+
+.butt{
+    display: flex;
+    justify-content: center;
+}
+
+
+.data{
+    display: grid;
+    justify-content: center;
+}

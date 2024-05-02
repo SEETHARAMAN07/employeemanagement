@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Form</title>
+    <link rel="stylesheet" href="./leave.component.css">
+</head>
+<body>
+    <div class="leave-form">
+        <h2>Leave Application Form</h2>
+        <form
+        action=""
+        #f="ngForm"
+        novalidate
+        (ngSubmit)="f.form.valid&&onSubmit()"
+        >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"[(ngModel)]="formdata.name" #name="ngModel" required>
+            
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" [(ngModel)]="formdata.department" #department="ngModel"required>
+            
+            <label for="rollno">Roll Number:</label>
+            <input type="text" id="rollno" name="rollno"[(ngModel)]="formdata.rollno" #rollno="ngModel" required>
+
+            <label for="reason">Reason for Leave:</label>
+            <textarea id="reason" name="reason" rows="4"[(ngModel)]="formdata.reason" #reason="ngModel" required></textarea>
+
+            <label for="days-available">No. of Days Leave Available:</label>
+            <input type="number" id="days-available" name="da"[(ngModel)]="formdata.da" #da="ngModel" required>
+            
+            <label for="leave-from">Leave From:</label>
+            <input type="datetime-local" id="leave-from" name="lf"[(ngModel)]="formdata.lf" #lf="ngModel" required>
+
+            <label for="leave-to">Leave To:</label>
+            <input type="datetime-local" id="leave-to" name="lt" [(ngModel)]="formdata.lt" #lt="ngModel"required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

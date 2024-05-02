@@ -1,0 +1,27 @@
+<h1>Registered Employees</h1>
+<div class="d-flex justify-content-center">
+	<div class="spinner-border" role="status">
+		<span class="sr-only" id="loading">
+			Loading...
+		</span>
+	</div>
+</div>
+
+<table class="table table-success table-striped">
+    
+ 
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">password</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let e of data;">
+			<td>{{ e.name }}</td>
+			<td>{{ e.password }}</td>
+			
+		</tr>
+	</tbody>
+</table>

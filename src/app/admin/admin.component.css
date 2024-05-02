@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 25%;
+    background-color: #333;
+    color: white;
+   
+  }
+  
+  .company-logo {
+    padding: 20px;
+  }
+  
+  .company-logo img {
+    width: 100px; /* Adjust as needed */
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0px;
+
+  }
+  
+  .sidebar-menu li {
+    padding: 10px;
+  }
+  
+  .sidebar-menu li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .content {
+    width: 75%;
+    padding: 20px;
+  }
+  
